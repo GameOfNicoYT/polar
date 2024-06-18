@@ -34,7 +34,7 @@
   <body data-bs-theme="dark">
     <div class="toast-container position-fixed bottom-0 end-0 p-3">
       <div
-        id="liveToast"
+        id="myToast"
         class="toast"
         role="alert"
         aria-live="assertive"
@@ -44,6 +44,7 @@
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/PICA.jpg/1200px-PICA.jpg"
             class="rounded me-2"
+            style="width: 20px;"
             alt="Prpfile Picture"
           />
           <strong class="me-auto">Administration</strong>
@@ -113,5 +114,13 @@
         <p class="h3">© nicoproyer.at, 2019-2024 Alle Rechte vorbehalten.</p>
       </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#myToast").toast("show");
+      });
+    </script>
   </body>
 </html>
